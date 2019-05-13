@@ -55,10 +55,8 @@ class App extends React.Component {
       this.setState({ error, isLoading: false });
     }
   }
-
-  handleChange = e => this.setState({ [e.target.name]: e.target.value  })
   
-  handleSelect = (name, value) => this.setState({ [name]: value  }, () => this.fetchCurrencies() );
+  handleSelect = (name, value) => this.setState({ [name]: value  }, () => this.fetchCurrencies());
   
   render() {
     const { exchangeRates, currency, day, month, year, error, historicalRates, isLoading } = this.state;

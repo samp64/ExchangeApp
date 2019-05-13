@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import { func, string, arrayOf, number, oneOfType } from "prop-types";
+import PropTypes from "prop-types";
 import "./Select.css";
 
 export default class Select extends React.Component {
@@ -34,14 +34,14 @@ export default class Select extends React.Component {
   }
 
   render () {
-    const { label, onClick, options, value, placeholder} = this.props;
+    const { label, onClick, options, value } = this.props;
     const { isOpen } = this.state;
     return (
       <div className="selectWrapper">
         {<label className="selectLabel">{label}</label>}
     
         <div className={classnames("select")} onClick={() => this.setOpen(true)}>
-          <div className={classnames({ placeholder: !value })}>{value || placeholder}</div>
+          <div>{value}</div>
           { 
             isOpen && 
               <div className="options" ref={this.setWrapperRef}>
@@ -65,17 +65,17 @@ export default class Select extends React.Component {
 }
 
 Select.propTypes = {
-  onClick: func.isRequired,
-  label: string,
-  value: oneOfType(
-    [string, number]
+  onClick: PropTypes.func.isRequired,
+  label: PropTypes.string,
+  value: PropTypes.oneOfType(
+    [PropTypes.string, PropTypes.number]
   ),
-  options: arrayOf(
-    oneOfType( 
-      [string, number]
+  options: PropTypes.arrayOf(
+    PropTypes.oneOfType( 
+      [PropTypes.string, PropTypes.number]
     )
   ),
-  placeholder: string,
+  placeholder: PropTypes.string,
 };
 
 
