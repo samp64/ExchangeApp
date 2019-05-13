@@ -1,0 +1,9 @@
+
+.error {
+    color: #cc0000;
+    text-transform: capitalize;
+    padding: 12px;
+    background-color: #FFBABA;
+    border-radius: 6px;
+    margin-top: 20px;
+}

@@ -1,0 +1,20 @@
+.selectWrap {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media ( max-width: 800px ) {
+  .selectWrapper {
+      flex-basis: calc(50% - 20px);
+  }
+
+  .selectWrapper {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+}

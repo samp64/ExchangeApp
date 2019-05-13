@@ -1,0 +1,21 @@
+
+.table {
+    border: 1px solid #45a29e;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #c5c6c7;
+}
+
+.col {
+    min-width: 60px;
+    display: inline-block;
+}
+
+.row {
+    padding: 12px 8px;
+}
+
+.row:nth-of-type(odd) { 
+    background-color: #45a29e;
+ } 
+

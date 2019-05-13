@@ -1,0 +1,68 @@
+.selectWrapper {
+    padding: 10px 16px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.selectLabel {
+  position: absolute;
+  top: -14px;
+  color: #45a29e;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(178, 207, 236);
+  height: 22px;
+  width: 120px;
+  align-self: flex-start;
+  background-color: #FFFF;
+  font-size: 16px;
+  padding: 9px;
+  border: 2px solid rgba(171,185,194,0.32);
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.select:after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #879299 transparent transparent transparent;
+}
+
+.options {
+  width: 100%;
+  border: 2px solid rgba(171,185,194,0.32);
+  position: absolute;
+  left: -3px;
+  top: 40px;
+  border-radius: 8px;
+  background-color: white;
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.options > div {
+  width: 90%;
+  height: 28px;
+  border-bottom: 2px solid rgba(171,185,194,0.32);
+  padding: 7px;
+  transition: all .2s;
+  text-align: center;
+}
+
+.options > div:hover {
+  background-color: rgb(218, 238, 245);
+}
+
+.placeholder {
+  color: #879299;
+}

@@ -1,0 +1,29 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+    font-family: roboto;
+}
+
+.title {
+    font-size: 32px;
+    color: #66fcf1;
+    font-weight: 600;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentWrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 32px;
+}
