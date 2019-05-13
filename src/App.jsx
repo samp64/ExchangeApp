@@ -5,12 +5,11 @@ import SelectCurrencyDate from "./components/SelectCurrencyDate";
 import Table from "./components/Table";
 import Graph from "./components/Graph";
 import ErrorMessage from "./components/ErrorMessage";
+import Spinner from "./components/Spinner";
 
 import api from "./services/api";
-import getGraphDomain from "./utils/getGraphDomain";
 
 import "./app.css";
-import Spinner from "./components/Spinner";
 
 class App extends React.Component {
   constructor(props) {
